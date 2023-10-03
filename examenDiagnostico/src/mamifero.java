@@ -1,9 +1,9 @@
 abstract public class mamifero {
-    private String habitat;
-    private float altura;
-    private float largo;
-    private float peso;
-    private String nombreCientifico;
+    protected String habitat;
+    protected float altura;
+    protected float largo;
+    protected float peso;
+    protected String nombreCientifico;
 
     public mamifero(String habitat, float altura, float largo, float peso, String nombreCientifico) {
 
@@ -59,10 +59,10 @@ abstract public class mamifero {
                 '}';
     }
 
-    public String comer;
+    abstract public String comer();
 
-    public  String dormir;
+    abstract public  String dormir();
 
-    public  String correr;
-    public  String comunicarse;
+    abstract public  String correr();
+    abstract public  String comunicarse();
 }

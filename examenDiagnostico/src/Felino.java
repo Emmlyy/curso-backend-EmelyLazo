@@ -78,15 +78,16 @@ abstract public class Felino extends mamifero{
         this.velocidad = velocidad;
     }
 
+
     @Override
     public String toString() {
         return "Felino{" +
                 "tamanoGarra=" + tamanoGarra +
                 ", velocidad=" + velocidad +
-                ", comer='" + comer + '\'' +
-                ", dormir='" + dormir + '\'' +
-                ", correr='" + correr + '\'' +
-                ", comunicarse='" + comunicarse + '\'' +
+                ", comer='" + comer() + '\'' +
+                ", dormir='" + dormir() + '\'' +
+                ", correr='" + correr() + '\'' +
+                ", comunicarse='" + comunicarse() + '\'' +
                 '}';
     }
 

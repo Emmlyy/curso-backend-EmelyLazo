@@ -1,4 +1,4 @@
-public class Canino extends mamifero{
+abstract public class Canino extends mamifero{
     protected String color;
     protected float tamanoColmillos;
     public Canino(String color, float tamanoColmillos, String habitat, float altura, float largo, float peso, String nombreCientifico) {
@@ -29,10 +29,10 @@ public class Canino extends mamifero{
         return "Canino{" +
                 "color='" + color + '\'' +
                 ", tamanoColmillos=" + tamanoColmillos +
-                ", comer='" + comer + '\'' +
-                ", dormir='" + dormir + '\'' +
-                ", correr='" + correr + '\'' +
-                ", comunicarse='" + comunicarse + '\'' +
+                ", comer='" + comer() + '\'' +
+                ", dormir='" + dormir() + '\'' +
+                ", correr='" + correr() + '\'' +
+                ", comunicarse='" + comunicarse() + '\'' +
                 '}';
     }
 }
