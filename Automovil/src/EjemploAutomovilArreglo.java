@@ -9,32 +9,32 @@ public class EjemploAutomovilArreglo {
 
             detalle += "=====" + auto.getFabricante() + "===== \n"
                     + "Modelo: " + auto.getModelo() + "\n"
-                    + "Motor: " +  auto.getMotor().getCilindrada() + auto.getMotor().getTipo()
-                    + "Color: " +  auto.getColor()
-                    + "Tipo: " +auto.getTipo();
+                    + "Motor: " +  auto.getMotor().getCilindrada() + auto.getMotor().getTipo()+"\n"
+                    + "Color: " +  auto.getColor() +"\n"
+                    + "Tipo: " +auto.getTipo().toString();
 
         } else if (auto.getFabricante().equals("Mazda")) {
             detalle += "=====" + auto.getFabricante() + "===== \n"
                     + "Modelo: " + auto.getModelo() + "\n"
-                    + "Motor: " +  auto.getMotor().getCilindrada() + auto.getMotor().getTipo()
-                    + "Color: " +  auto.getColor()
+                    + "Motor: " +  auto.getMotor().getCilindrada() + auto.getMotor().getTipo() + "\n"
+                    + "Color: " +  auto.getColor()+"\n"
                     + "Tipo: " +auto.getTipo();
 
         }else if (auto.getFabricante().equals("Nissan")) {
             detalle += "=====" + auto.getFabricante() + "===== \n"
                     + "Modelo: " + auto.getModelo() + "\n"
-                    + "Motor: " +  auto.getMotor().getCilindrada() + auto.getMotor().getTipo()
-                    + "Color: " +  auto.getColor()
-                    + "Tipo: " +auto.getTipo()
+                    + "Motor: " +  auto.getMotor().getCilindrada() + auto.getMotor().getTipo()+"\n"
+                    + "Color: " +  auto.getColor()+"\n"
+                    + "Tipo: " +auto.getTipo()+"\n"
                     + "Capadidad de Estanque: " + auto.getEstanque().getCapacidad();
 
         }else if (auto.getFabricante().equals("Suzuki")) {
             detalle += "=====" + auto.getFabricante() + "===== \n"
                     + "Modelo: " + auto.getModelo() + "\n"
-                    + "Motor: " +  auto.getMotor().getCilindrada() + auto.getMotor().getTipo()
-                    + "Color: " +  auto.getColor()
-                    + "Tipo: " +auto.getTipo()
-                    + "Capadidad de Estanque: " + auto.getEstanque().getCapacidad()
+                    + "Motor: " +  auto.getMotor().getCilindrada() + auto.getMotor().getTipo() + "\n"
+                    + "Color: " +  auto.getColor()+"\n"
+                    + "Tipo: " +auto.getTipo()+"\n"
+                    + "Capadidad de Estanque: " + auto.getEstanque().getCapacidad()+"\n"
                     + "Patente: " + auto.getColorPatente();
 
         }else if (auto.getFabricante().equals("Audi")) {
