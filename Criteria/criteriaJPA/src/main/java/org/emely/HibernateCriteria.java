@@ -29,10 +29,10 @@ public class HibernateCriteria {
         ParameterExpression<String> nombreParam = criteria.parameter(String.class, "nombre");
 
         query.select(from).where(criteria.equal(from.get("nombre"), nombreParam));
-        clientes = em.createQuery(query).setParameter("nombre", "Andres").getResultList();
+        clientes = em.createQuery(query).setParameter("nombre", "EMELY").getResultList();
         clientes.forEach(System.out::println);
 
-        System.out.println("========== usando where like para buscar clientes por nombre ==========");
+    /*System.out.println("========== usando where like para buscar clientes por nombre ==========");
 
         query = criteria.createQuery(Cliente.class);
         from = query.from(Cliente.class);
@@ -220,7 +220,7 @@ public class HibernateCriteria {
         max = (Long) registro[2];
         min = (Long) registro[3];
 
-        System.out.println("count=" + count + ", sum=" + sum + ", max=" + max + ", min=" + min);
+        System.out.println("count=" + count + ", sum=" + sum + ", max=" + max + ", min=" + min);*/
 
         em.close();
     }

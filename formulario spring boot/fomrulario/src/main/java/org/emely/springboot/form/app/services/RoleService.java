@@ -1,0 +1,10 @@
+package org.emely.springboot.form.app.services;
+
+import org.emely.springboot.form.app.models.domain.Role;
+
+import java.util.List;
+
+public interface RoleService {
+    public List<Role> listar();
+    public Role obtenerPorId(Integer id);
+}
